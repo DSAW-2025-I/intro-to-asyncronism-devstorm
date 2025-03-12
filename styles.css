@@ -24,7 +24,7 @@ body {
 
 .pokemonSideBar {
     width: 250px;
-    background-color: #1ae535;
+    background-color: #19af2d;
     padding: 20px;
     height: 100vh;
     position: fixed;
@@ -46,6 +46,7 @@ body {
     text-align: center;
     margin-bottom: 15px; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*aprender esto*/
+    font-size: 1.2rem;
 }
 
 .pokemonSideBar li {
@@ -84,14 +85,14 @@ h1{
 
 .pokemon-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /*grid generator*/
+    grid-template-columns: repeat(2, 1fr); /*grid generator*/
     grid-template-rows: repeat(4, 1fr); /*grid generator*/
     grid-column-gap: 0px; /*grid generator*/
     grid-row-gap: 0px;  /*grid generator*/
     gap: 15px;
     padding: 20px;
-    width: 80%;
-    margin-left: 270px;
+    width: 70%;
+    margin-left: 350px;
     padding-top: 70px;
     
 }
@@ -126,7 +127,7 @@ button:hover{
 }
 
 .card {
-    background-color: white;
+    background-color: #f4f4f4;
     padding: 15px;
     text-align: center;
     border-radius: 15px;
