@@ -31,3 +31,5 @@
 | Calidad del código     | 1.5     |
 | Funcionalidad      | 1.5      |
 
+#Desarrollado por: Carlos Andres Diaz Mendez y Manuel David Carreño
+**GitHub Pages:** https://dsaw-2025-i.github.io/intro-to-asyncronism-devstorm/
