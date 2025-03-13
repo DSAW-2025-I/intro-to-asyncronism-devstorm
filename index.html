@@ -8,58 +8,52 @@
     <title>PokeDex</title>
 </head>
 <body>
-
     <h1>PokeDex</h1>
 
+    <button id="toggleSidebar" class="toggle-btn">☰</button>
+
     <div class="pokemonSideBar">
-        <h2>Tipos de Pokemones</h2>
+        <h2>Pokemon Element</h2>
         <ul>
-            <li>Fuego</li>
-            <li>Agua</li>
-            <li>Planta</li>
-            <li>Electrico</li>
-            <li>Hielo</li>
-            <li>Lucha</li>
-            <li>Veneno</li>
-            <li>Tierra</li>
-            <li>Volador</li>
-            <li>Psiquico</li>
+            <li>Fire</li>
+            <li>Water</li>
+            <li>Grass</li>
+            <li>Electric</li>
+            <li>Ice</li>
+            <li>Fighting</li>
+            <li>Poison</li>
+            <li>Ground</li>
+            <li>Flying</li>
+            <li>Psychic</li>
             <li>Bug</li>
-            <li>Roca</li>
-            <li>Fantasma</li>
+            <li>Rock</li>
+            <li>Ghost</li>
             <li>Dragon</li>
-            <li>Siniestro</li>
-            <li>Acero</li>
-            <li>Hada</li>
+            <li>Dark</li>
+            <li>Steel</li>
+            <li>Fairy</li>
         </ul>
     </div>
 
     <div class="content">
         <header>
-            <h2>Colección de Pokemones</h2>
+            <h2>Pokemon Collection</h2>
             <form id="searchForm">
-                <label for="pokemonInput">Buscar pokemon por nombre o ID:</label>
-                <input type="text" id="pokemonInput" placeholder="Ejemplo: Pikachu">
-                <button type="submit">Buscar</button>
+                <label for="pokemonInput">Search Pokemon by name or ID:</label>
+                <input type="text" id="pokemonInput" placeholder="Example: Pikachu">
             </form>
         </header>
     </div>
 
     <div class="pokemon-container">
-        <div class="card">Pokémon 1</div>
-        <div class="card">Pokémon 2</div>
-        <div class="card">Pokémon 3</div>
-        <div class="card">Pokémon 4</div>
-        <div class="card">Pokémon 5</div>
-        <div class="card">Pokémon 6</div>
-        <div class="card">Pokémon 7</div>
-        <div class="card">Pokémon 8</div>
-        <div class="card">Pokémon 9</div>
-        <div class="card">Pokémon 10</div>
-        <div class="card">Pokémon 11</div>
-        <div class="card">Pokémon 12</div>
     </div>
 
+    <div id="pokemonModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
