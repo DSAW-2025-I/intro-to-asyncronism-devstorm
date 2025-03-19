@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleScroll() {
         const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
         
-        if (scrollTop + clientHeight >= scrollHeight - 800) {
+        if (scrollTop + clientHeight >= scrollHeight - 800 && !currentFilter) {
             loadMorePokemon();
         }
     }
@@ -232,15 +232,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     sidebarItems.forEach(item => {
-        item.addEventListener('click', () => {
+        item.addEventListener('click', async () => {
             const type = item.textContent;
             
             if (currentFilter === type) {
                 currentFilter = null;
                 item.classList.remove('active');
-                currentPokemonId = 1;
                 pokemonContainer.innerHTML = '';
-                loadMorePokemon();
+                currentPokemonId = 1;
+                loading = false;
+                await loadMorePokemon();
             } else {
                 sidebarItems.forEach(i => i.classList.remove('active'));
                 item.classList.add('active');
